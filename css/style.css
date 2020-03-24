@@ -1,0 +1,91 @@
+:root {
+  --primary: #111;
+  --secondary:#222;
+}
+
+a {
+  color: var(--secondary);
+  text-align: center;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary);
+}
+
+table {
+  border: 1px solid #dee2e6;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table th {
+  border-right: 1px solid #dee2e6;
+}
+
+.memberLevel {
+  display: flex;
+}
+
+.memberChart {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.memberCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-54%, -50%);
+  border: 20px solid #f3f3f3;
+  border-left: 20px solid #3498db;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.memberChart i.fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.memberChart p {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-87%, -50%);
+}
+
+.showMember {
+  padding: 20px;
+}
+
+.showMember .bonusPoints {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.showMember p:not(.bonusPoints), .memberCoupon li {
+  color: #444;
+}
+
+.showMember p:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.fz-12  {
+  font-size: 12px;
+}
